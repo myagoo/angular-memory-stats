@@ -17,7 +17,7 @@ Otherwise the results from performance.memory are bucketed and less useful.
 ### Add the module to your Angular's dependencies
 
 ```
-angular.module('youModule', [
+angular.module('yourModule', [
     'angular-memory-stats'
 ])
 ```
@@ -33,7 +33,7 @@ angular.module('youModule', [
 angular-memory-stats is enabled by default, if you wish to disable it use the ```angularMemoryStatsProvider``` Provider
 
 ```
-angular.module('youModule').config(function(angularMemoryStatsProvider){
+angular.module('yourModule').config(function(angularMemoryStatsProvider){
     angularMemoryStatsProvider.enable(false)
 });
 ```

@@ -1,7 +1,7 @@
 {
     "name": "angular-memory-stats",
     "version": "1.0.0-rc1",
-    "description": "Angular Memory Stats display the memory activity of you angularJs app",
+    "description": "Angular Memory Stats displays your app memory activity",
     "main": "./dist/angular-memory-stats.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
