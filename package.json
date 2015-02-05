@@ -1,6 +1,6 @@
 {
     "name": "angular-memory-stats",
-    "version": "1.0.0-rc1",
+    "version": "1.0.0-rc3",
     "description": "Angular Memory Stats displays your app memory activity",
     "main": "./dist/angular-memory-stats.js",
     "scripts": {
