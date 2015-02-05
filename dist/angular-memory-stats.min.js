@@ -1,6 +1,6 @@
 /**
- * angular-memory-stats - This plugin is based on Paul Irish's [memory-stats](https://github.com/paulirish/memory-stats.js).
- * @version v1.0.0
+ * angular-memory-stats - Angular Memory Stats display the memory activity of you angularJs app
+ * @version v1.0.0-rc1
  * @author shprink <contact@julienrenaux.fr>
  * @link https://github.com/livingobjects/angular-memory-stats
  * @license MIT

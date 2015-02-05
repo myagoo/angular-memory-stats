@@ -1,11 +1,18 @@
 {
     "name": "angular-memory-stats",
-    "version": "1.0.0",
-    "description": "This plugin is based on Paul Irish's [memory-stats](https://github.com/paulirish/memory-stats.js).",
+    "version": "1.0.0-rc1",
+    "description": "Angular Memory Stats display the memory activity of you angularJs app",
     "main": "./dist/angular-memory-stats.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
+    "keywords": [
+        "angular",
+        "angularjs",
+        "memory",
+        "statistics",
+        "stats"
+    ],
     "repository": {
         "type": "git",
         "url": "https://github.com/livingobjects/angular-memory-stats.git"
