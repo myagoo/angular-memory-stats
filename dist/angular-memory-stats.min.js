@@ -1,5 +1,5 @@
 /**
- * angular-memory-stats - Angular Memory Stats display the memory activity of you angularJs app
+ * angular-memory-stats - Angular Memory Stats displays your app memory activity
  * @version v1.0.0-rc1
  * @author shprink <contact@julienrenaux.fr>
  * @link https://github.com/livingobjects/angular-memory-stats
