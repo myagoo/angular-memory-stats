@@ -59,12 +59,37 @@
 
 	module.exports = module = angular.module('angular-memory-stats', []);
 
+	module.provider('angularMemoryStats', function() {
+	  var $get, enable, isEnabled;
+	  isEnabled = true;
+	  enable = function(enable) {
+	    if (enable == null) {
+	      enable = true;
+	    }
+	    return isEnabled = enable;
+	  };
+	  $get = function() {
+	    return {
+	      isEnabled: function() {
+	        return isEnabled;
+	      }
+	    };
+	  };
+	  return {
+	    enable: enable,
+	    $get: $get
+	  };
+	});
+
 	module.directive('angularMemoryStats', function() {
 	  return {
 	    restrict: 'E',
 	    scope: false,
-	    controller: ["$scope", "$element", function($scope, $element) {
+	    controller: ["$scope", "$element", "angularMemoryStats", function($scope, $element, angularMemoryStats) {
 	      var stats, update;
+	      if (!angularMemoryStats.isEnabled()) {
+	        return;
+	      }
 	      stats = new MemoryStats();
 	      $element.append(stats.domElement);
 	      update = function() {
