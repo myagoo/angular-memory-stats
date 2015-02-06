@@ -23,6 +23,11 @@ module.directive 'angularMemoryStats' , ->
         if !angularMemoryStats.isEnabled()
             return
         stats = new MemoryStats()
+        $element.css
+            'zIndex': 999999
+            'position': 'fixed'
+            'right': 5
+            'bottom': 5
         $element.append stats.domElement
         update = ->
             stats.update()
